@@ -55,3 +55,5 @@ for r in np.arange(n_repeats):
         # Put the mean difference into the fake_differences array.
         fake_differences[i] = fake_diff
     fake_stds[r] = np.std(fake_differences)
+
+print(np.quantile(fake_stds, [0.001, 0.999]))

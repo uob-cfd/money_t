@@ -24,6 +24,7 @@ test = {
           'locked': False
         },
         {
+          # See simulate_like_t.py for limits.
           'code': r"""
           >>> 1.6 < like_t < 1.8
           True
