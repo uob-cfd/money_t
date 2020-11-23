@@ -1,13 +1,13 @@
 test = {
-  'name': 'Question like_t',
+  'name': 'Question calculated_t',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> # You need to set the value for 'like_t'
-          >>> 'like_t' in vars()
+          >>> # You need to set the value for 'calculated_t'
+          >>> 'calculated_t' in vars()
           True
           """,
           'hidden': False,
@@ -15,18 +15,17 @@ test = {
         },
         {
           'code': r"""
-          >>> # You haven't changed the value for 'like_t'
+          >>> # You haven't changed the value for 'calculated_t'
           >>> # from its initial state (of ...)
-          >>> like_t is not ...
+          >>> calculated_t is not ...
           True
           """,
           'hidden': False,
           'locked': False
         },
         {
-          # See simulate_like_t.py for limits.
           'code': r"""
-          >>> 1.74 < like_t < 1.85
+          >>> np.isclose(calculated_t, 1.788676747081)
           True
           """,
           'hidden': False,

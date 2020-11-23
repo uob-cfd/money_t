@@ -56,4 +56,9 @@ for r in np.arange(n_repeats):
         fake_differences[i] = fake_diff
     fake_stds[r] = np.std(fake_differences)
 
+""" Example:
+[2483.83043141 2592.42163534]
+[1.74939252 1.82587465]
+"""
 print(np.quantile(fake_stds, [0.001, 0.999]))
+print(np.quantile(actual_diff / fake_stds, [0.001, 0.999]))
