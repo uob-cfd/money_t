@@ -25,8 +25,7 @@ test = {
         },
         {
           'code': r"""
-          >>> np.isclose(calculated_t, 1.788676747081)
-          True
+          >>> assert np.isclose(calculated_t, 1.788676747081)
           """,
           'hidden': False,
           'locked': False

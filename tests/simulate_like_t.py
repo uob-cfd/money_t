@@ -12,6 +12,9 @@ gss = pd.read_csv('GSS2002.csv')
 
 # Recode the income column.
 def recode_income(value):
+    import pandas as pd
+    import numpy as np
+
     if pd.isna(value):  # Missing value
         return np.nan
     if value == 'under 1000':

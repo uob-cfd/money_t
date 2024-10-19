@@ -25,8 +25,7 @@ test = {
         },
         {
           'code': r"""
-          >>> np.isclose(first_part_of_denom, 35318.038)
-          True
+          >>> assert np.isclose(first_part_of_denom, 35318.038)
           """,
           'hidden': False,
           'locked': False

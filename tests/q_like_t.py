@@ -26,8 +26,7 @@ test = {
         {
           # See simulate_like_t.py for limits.
           'code': r"""
-          >>> 1.74 < like_t < 1.85
-          True
+          >>> assert 1.74 < like_t < 1.85
           """,
           'hidden': False,
           'locked': False
