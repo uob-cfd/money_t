@@ -8,8 +8,7 @@ test = {
         {
           'code': r"""
           >>> # You need to set the value for 'p_fake_ge_actual'
-          >>> 'p_fake_ge_actual' in vars()
-          True
+          >>> assert 'p_fake_ge_actual' in vars()
           """,
           'hidden': False,
           'locked': False
@@ -18,8 +17,7 @@ test = {
           'code': r"""
           >>> # You haven't changed the value for 'p_fake_ge_actual'
           >>> # from its initial state (of ...)
-          >>> p_fake_ge_actual is not ...
-          True
+          >>> assert p_fake_ge_actual is not ...
           """,
           'hidden': False,
           'locked': False
@@ -27,8 +25,7 @@ test = {
         {
           'code': r"""
           >>> # Proportion should be between 0 and 1
-          >>> 0 <= p_fake_ge_actual <= 1
-          True
+          >>> assert 0 <= p_fake_ge_actual <= 1
           """,
           'hidden': False,
           'locked': False
@@ -36,8 +33,7 @@ test = {
         {
           'code': r"""
           >>> # Proportion should be fairly small
-          >>> 0 <= p_fake_ge_actual <= 0.06
-          True
+          >>> assert 0 <= p_fake_ge_actual <= 0.06
           """,
           'hidden': False,
           'locked': False

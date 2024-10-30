@@ -8,8 +8,7 @@ test = {
         {
           'code': r"""
           >>> # You need to set the value for 'actual_diff'
-          >>> 'actual_diff' in vars()
-          True
+          >>> assert 'actual_diff' in vars()
           """,
           'hidden': False,
           'locked': False
@@ -18,8 +17,7 @@ test = {
           'code': r"""
           >>> # You haven't changed the value for 'actual_diff'
           >>> # from its initial state (of ...)
-          >>> actual_diff is not ...
-          True
+          >>> assert actual_diff is not ...
           """,
           'hidden': False,
           'locked': False

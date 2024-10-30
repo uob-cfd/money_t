@@ -7,8 +7,7 @@ test = {
         {
           'code': r"""
           >>> # You need to set the value for 't_stat'
-          >>> 't_stat' in vars()
-          True
+          >>> assert 't_stat' in vars()
           """,
           'hidden': False,
           'locked': False
@@ -17,8 +16,7 @@ test = {
           'code': r"""
           >>> # You haven't changed the value for 't_stat'
           >>> # from its initial state (of ...)
-          >>> t_stat is not ...
-          True
+          >>> assert t_stat is not ...
           """,
           'hidden': False,
           'locked': False

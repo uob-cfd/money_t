@@ -7,8 +7,7 @@ test = {
         {
           'code': r"""
           >>> # You need to set the value for 'first_part_of_denom'
-          >>> 'first_part_of_denom' in vars()
-          True
+          >>> assert 'first_part_of_denom' in vars()
           """,
           'hidden': False,
           'locked': False
@@ -17,8 +16,7 @@ test = {
           'code': r"""
           >>> # You haven't changed the value for 'first_part_of_denom'
           >>> # from its initial state (of ...)
-          >>> first_part_of_denom is not ...
-          True
+          >>> assert first_part_of_denom is not ...
           """,
           'hidden': False,
           'locked': False

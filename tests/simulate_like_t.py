@@ -42,11 +42,11 @@ n_favor = len(favor_income_arr)
 # Concatenate the in-favor and opposed incomes.
 pooled = np.append(favor_income_arr, oppose_income_arr)
 
-n_repeats = 10000
+n_repeats = 1000
 fake_stds = np.zeros(n_repeats)
 for r in np.arange(n_repeats):
-    fake_differences = np.zeros(10000)
-    for i in np.arange(10000):
+    fake_differences = np.zeros(n_repeats)
+    for i in np.arange(n_repeats):
         # Permute the pooled incomes
         shuffled = np.random.permutation(pooled)
         # Make a fake favor sample

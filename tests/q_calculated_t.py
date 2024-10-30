@@ -7,8 +7,7 @@ test = {
         {
           'code': r"""
           >>> # You need to set the value for 'calculated_t'
-          >>> 'calculated_t' in vars()
-          True
+          >>> assert 'calculated_t' in vars()
           """,
           'hidden': False,
           'locked': False
@@ -17,8 +16,7 @@ test = {
           'code': r"""
           >>> # You haven't changed the value for 'calculated_t'
           >>> # from its initial state (of ...)
-          >>> calculated_t is not ...
-          True
+          >>> assert calculated_t is not ...
           """,
           'hidden': False,
           'locked': False

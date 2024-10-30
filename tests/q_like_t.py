@@ -7,8 +7,7 @@ test = {
         {
           'code': r"""
           >>> # You need to set the value for 'like_t'
-          >>> 'like_t' in vars()
-          True
+          >>> assert 'like_t' in vars()
           """,
           'hidden': False,
           'locked': False
@@ -17,8 +16,7 @@ test = {
           'code': r"""
           >>> # You haven't changed the value for 'like_t'
           >>> # from its initial state (of ...)
-          >>> like_t is not ...
-          True
+          >>> assert like_t is not ...
           """,
           'hidden': False,
           'locked': False
